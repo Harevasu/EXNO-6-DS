@@ -50,7 +50,8 @@ plt.title("Multi-Line Plot")
 plt.xlabel('X Label')
 plt.ylabel("Y Label")
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/4d6c2a15-2352-4ba4-bd6b-97a54cd93ce7)
+![image](https://github.com/user-attachments/assets/2422e791-ad33-4677-9315-b4ebd5d5c391)
+
 ```
 tips=sns.load_dataset('tips')
 avg_total_bill = tips.groupby('day')['total_bill'].mean()
@@ -63,14 +64,16 @@ plt.ylabel('Amount')
 plt.title('Average Total Bill and Tip by Day')
 plt.legend()
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/86b30955-7bb2-44af-92d1-39e8be4b56ea)
+![image](https://github.com/user-attachments/assets/127a9e8e-d2d5-4c08-a71f-997e94be34b9)
+
 ```
 avg_total_bill = tips.groupby('time')['total_bill'].mean() 
 avg_tip=tips.groupby('time') ['tip'].mean()
 p1= plt.bar(avg_total_bill.index, avg_total_bill, label='Total Bill', width=0.4)
 p2 = plt.bar(avg_tip.index,avg_tip,bottom=avg_total_bill,label='Tip', width=0.4)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/27a32e9f-e734-4f47-adf1-bafddba998c3)
+![image](https://github.com/user-attachments/assets/8955d2fd-2cb0-4fbf-a9b7-b08cd3fa93ff)
+
 ```
 years=range(2000, 2012)
 apples=[0.895, 0.91, 0.919, 0.926, 0.929, 0.931, 0.934, 0.936, 0.937, 0.9375, 0.9372, 0.939] 
@@ -80,7 +83,8 @@ oranges = [0.962, 0.941, 0.930, 0.923, 0.918, 0.908, 0.907, 0.904, 0.901, 0.898,
 plt.bar(years, apples)
 plt.bar(years, oranges, bottom=apples)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/31f5b45b-5a80-4259-a259-a4cecee25ee5)
+![image](https://github.com/user-attachments/assets/8dd70b90-7898-4af6-b551-55815799882e)
+
 ```
 import seaborn as sns
 dt= sns.load_dataset('tips')
@@ -89,18 +93,21 @@ plt.xlabel('Day of the Week')
 plt.ylabel("Total Bill")
 plt.title('Total Bill by Day and Gender')
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/359daca3-3920-4c78-b593-7d660c09cc36)
+![image](https://github.com/user-attachments/assets/38986a39-84b2-4a62-abe8-e69c2fd302af)
+
 ```
 tit=pd.read_csv("titanic_dataset.csv")
 tit
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/b749f1ee-b0a6-4a67-a340-f9cae8a8290a)
+![image](https://github.com/user-attachments/assets/5812cfa4-3654-4a2d-b36c-87d4e6eef78f)
+
 ```
 plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked', y='Fare', data=tit, palette='rainbow') 
 plt.title("Fare of Passenger by Embarked Town")
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/03dbd087-2a3e-4bfa-8847-bc2e9bbe7cc3)
+![image](https://github.com/user-attachments/assets/852409ea-5482-4c4a-b4b0-8aed53b89509)
+
 ```
 plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked', y='Fare', data=tit, palette='rainbow', hue='Pclass') 
