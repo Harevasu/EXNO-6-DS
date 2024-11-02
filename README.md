@@ -199,7 +199,8 @@ sns.kdeplot(data=mart,x='PassengerId',hue='Survived',multiple='stack')
 ```
 sns.kdeplot(data=mart,x='PassengerId',y='Survived')
 ```
-![image](https://github.com/user-attachments/assets/f2965d6b-bdf3-4642-8124-512a9bebe239)
+![image](https://github.com/user-attachments/assets/30614874-a179-48b8-81a9-40b651bfc4f6)
+
 
 ```
 data = np.random.randint(low = 1, high = 100, size = (10,10))
