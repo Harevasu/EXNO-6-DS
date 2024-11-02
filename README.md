@@ -27,17 +27,19 @@ x = [1, 2, 3, 4, 5]
 y = [3, 6, 2, 7, 1]
 sns.lineplot(x=x,y=y)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/18a0f3c8-10a6-42b4-9eb3-45770f741ac3)
+![image](https://github.com/user-attachments/assets/2281c885-746c-40ed-8dcd-a1ab2fdc60c8)
 
 ```
 df = sns.load_dataset("tips")
 df
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/0124fef5-dcba-4c31-9831-db85384d9c5a)
+![image](https://github.com/user-attachments/assets/7576ad2e-7490-42b7-853e-0f26efd532f3)
+
 ```
 sns.lineplot(x="total_bill",y="tip", data=df, hue="sex", linestyle='solid', legend="auto")
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/1bbe2d28-735c-4114-aff7-9030d334c830)
+![image](https://github.com/user-attachments/assets/f55cb9df-ce8e-48d4-a273-6286dec644c5)
+
 ```
 x=[1, 2, 3, 4, 5]
 y1=[3, 5, 2, 6, 1]
