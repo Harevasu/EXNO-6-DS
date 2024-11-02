@@ -134,37 +134,44 @@ sns.histplot(data=df,x="Pclass", hue="Survived", kde=True)
 tips=sns.load_dataset('tips')
 sns.boxplot(x=tips['day'], y=tips ['total_bill'], hue=tips['sex'])
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/c7d0ff3a-e9a0-4369-a9c9-9229d84776c3)
+![image](https://github.com/user-attachments/assets/d5b61feb-f054-440f-ae66-69af079d549d)
+
 ```
 sns.boxplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6, boxprops={"facecolor": "lightblue", "edgecolor": "darkblue"},
 whiskerprops={"color": "black", "linestyle": "--", "linewidth": 1.5}, capprops={"color": "black", "linestyle": "--", "linewidth": 1.5})
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/dc5777c4-83cf-47d2-ba0c-b6bb81547441)
+![image](https://github.com/user-attachments/assets/50f9d7a9-4c1b-44cd-a625-f3eeff0c2ec0)
+
 ```
 sns.violinplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6, palette="Set3", inner="quartile")
 plt.xlabel("Day of the Week")
 plt.ylabel("Total Bill")
 plt.title("Violin Plot of Total Bill by Day and Smoker Status")
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/8dec8878-d0bb-46ca-bc17-095aba86cffd)
+![image](https://github.com/user-attachments/assets/eda44dac-4bfc-461f-8c72-e768554e3663)
+
 ```
 mart=pd.read_csv("titanic_dataset.csv")
 mart
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/32c63c42-35dc-47df-b851-c13e54c166aa)
+![image](https://github.com/user-attachments/assets/1fafe0a7-4c02-46c2-8818-592af035c619)
+
 ```
 mart=mart[['PassengerId', 'Survived', 'Age', 'Name', 'Ticket', 'Embarked']] 
 mart.head(10)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/bcbe61b9-5739-4853-a186-302272133266)
+![image](https://github.com/user-attachments/assets/e5003aeb-11e2-4103-9ea6-6061d0416a82)
+
 ```
 sns.kdeplot(data=mart,x='PassengerId')
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/727482e0-5b45-47e4-8542-93ebc9cfb5b7)
+![image](https://github.com/user-attachments/assets/5c27a9fa-e313-4e8f-93fe-8e1eb7188c4e)
+
 ```
 sns.kdeplot(data=mart,x='Age')
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/9bb955c9-ba97-48ab-b158-35a44931ccf6)
+![image](https://github.com/user-attachments/assets/c341ccd6-92cf-4777-88ba-1b0b80c5389e)
+
 ```
 sns.kdeplot(data=mart)
 ```
