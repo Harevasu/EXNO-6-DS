@@ -124,12 +124,14 @@ num_var
 ```
 sns.histplot(data = num_var, kde = True)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/39b3d5fa-e8af-45f5-afb2-2875c766a5e6)
+![image](https://github.com/user-attachments/assets/9deb5f2d-c101-43bc-b369-fccfa0cbf9a3)
+
 ```
 df=pd.read_csv("titanic_dataset.csv")
 sns.histplot(data=df,x="Pclass", hue="Survived", kde=True)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/e8b91ede-1cc0-4087-beb6-c3c56d8137ee)
+![image](https://github.com/user-attachments/assets/40f44889-fa22-4166-bdfd-15f73af2928a)
+
 ```
 tips=sns.load_dataset('tips')
 sns.boxplot(x=tips['day'], y=tips ['total_bill'], hue=tips['sex'])
