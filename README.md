@@ -168,24 +168,28 @@ sns.kdeplot(data=mart,x='Age')
 ```
 sns.kdeplot(data=mart)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/8cc57d95-8df2-4483-8c98-2edbcfb68b0c)
+![image](https://github.com/user-attachments/assets/41702d92-8f83-4f5c-8c8f-fd636ebcc39b)
+
 ```
 sns.kdeplot(data=mart,x='PassengerId',hue='Survived',multiple='stack')
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/f56e128b-5393-46e8-acb6-33bfd6fde4a9)
+![image](https://github.com/user-attachments/assets/4f164684-f2a7-4960-94b1-b1b7791e9239)
+
 ```
 sns.kdeplot(data=mart,x='PassengerId',y='Survived')
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/4f66d13f-770e-4b17-b29d-74f42cb4395e)
+![image](https://github.com/user-attachments/assets/f2965d6b-bdf3-4642-8124-512a9bebe239)
+
 ```
 data = np.random.randint(low = 1, high = 100, size = (10,10))
 hm=sns.heatmap(data=data,annot=True)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/5eba9f52-3c11-4640-b78f-451463d24415)
+![image](https://github.com/user-attachments/assets/2ce83720-a373-4f50-9860-d323aa3c399f)
+
 ```
 hm=sns.heatmap(data=data)
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/4bbbf59a-e638-4c7b-bf5c-5298f9bada3b)
+![image](https://github.com/user-attachments/assets/24f59c21-29ba-4e0e-8e24-383c7d0f8bb2)
 
 ## Result:
 
