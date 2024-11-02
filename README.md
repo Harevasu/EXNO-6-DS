@@ -106,7 +106,8 @@ plt.figure(figsize=(8,5))
 sns.barplot(x='Embarked', y='Fare', data=tit, palette='rainbow', hue='Pclass') 
 plt.title("Fare of Passenger by Embarked Town, Divided by Class")
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/090114ac-6d91-4117-80ca-2bb2fe72af26)
+![image](https://github.com/user-attachments/assets/bf3554f7-0fe5-4860-b024-edbaf4cef306)
+
 ```
 tips=sns.load_dataset('tips')
 sns.scatterplot(x='total_bill', y='tip', hue='sex', data=tips)
@@ -114,13 +115,15 @@ plt.xlabel('Total Bill')
 plt.ylabel("Tip Amount")
 plt.title('Scatter Plot of Total Bill vs. Tip Amount')
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/b7984ccc-60c8-4cf2-ba31-0dafe6119b91)
+![image](https://github.com/user-attachments/assets/9450f7d8-2ab5-41c6-8446-368264630cb0)
+
 ```
 num_var = np.random.randn(1000)
 num_var=pd.Series(num_var, name = "Numerical variable")
 num_var
 ```
-![image](https://github.com/Sriram8452/EXNO-6-DS/assets/118708032/5e149370-320f-4c4b-b6e9-93839011d166)
+![image](https://github.com/user-attachments/assets/e1f37c21-d0c1-479e-bcad-6a3557fd7324)
+
 ```
 sns.histplot(data = num_var, kde = True)
 ```
